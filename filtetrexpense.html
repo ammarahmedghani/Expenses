@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="filtetexpense.css">
+    <title>filter expenses</title>
+</head>
+<body>
+
+<div class="container">  
+    <form id="contact">
+      <h3>Filter Your Expenses</h3>
+      
+      <fieldset> FROM
+        <div class="field">
+            <div class="ui left icon input">
+              <input
+                type="date"
+                class="formInput"
+                id="spentAt_from"
+                name="Contact"
+                placeholder="Spent At"
+                required
+              />
+              <i class="mobile alternate icon formIcon"></i>
+            </div>
+          </div>
+      </fieldset>
+      <fieldset> TO
+        <div class="field">
+            <div class="ui left icon input">
+              <input
+                type="date"
+                class="formInput"
+                id="spentAt_to"
+                name="Contact"
+                placeholder="Spent At"
+                required
+              />
+              <i class="mobile alternate icon formIcon"></i>
+            </div>
+          </div>
+      </fieldset>
+
+
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit">S H O W</button>
+      </fieldset>
+    </form>
+
+
+    <div class="expenses flex">
+          
+        
+    </div>
+  </div>
+
+
+  <div class="expenses flex">
+          
+        
+  </div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+<script
+  src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"
+></script>
+
+<script
+  src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"
+></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAMOtqaLo5zulEcaUC1OfuxxxJoIwxCPyk",
+    authDomain: "expenses-c0397.firebaseapp.com",
+    databaseURL: "https://expenses-c0397.firebaseio.com",
+    projectId: "expenses-c0397",
+    storageBucket: "expenses-c0397.appspot.com",
+    messagingSenderId: "327664232762",
+    appId: "1:327664232762:web:a714b9442fe7796b804803"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+
+<script src="filterexpense.js"></script>
+
+
+</body>
+</html>

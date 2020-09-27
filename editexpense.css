@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: normal !important;
+}
+
+body {
+    line-height: normal !important;
+  }
+
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20fr 60fr 20fr;
+  grid-template-rows: 20vh 60vh 20vh;
+  grid-template-areas: ". . ."
+                       ". content ."
+                       ". . .";
+  background: lightslategray;
+}
+
+.content {
+    grid-area: content;
+    background: lightgray;
+    flex-flow: column;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+#loginForm {
+    width: 80%;
+}

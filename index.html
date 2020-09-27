@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left flex">
+        <div class="signup signupBtn">Sign Up</div>
+        <div class="googleLogin signupBtn">Google Sign In</div>
+      </div>
+      <div class="right flex">
+        <h1>EXPENSIFY</h1>
+        <form id="loginForm" class="ui form">
+          <div class="field">
+            <label>Email</label>
+            <input
+              id="loginEmail"
+              required
+              type="text"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <input
+              id="loginPassword"
+              required
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+          <button class="ui button teal fluid" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="ui modal mini m1Form">
+      <div class="header formHeader" style="text-align:center;">
+        SIGN UP
+      </div>
+      <div class="content">
+        <div class="ui segment">
+          <form id="signupForm" class="ui form registeration">
+            <div class="field">
+              <div class="ui left icon input">
+                <input
+                  type="text"
+                  class="formInput"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Full Name"
+                  required
+                />
+                <i class="user icon formIcon"></i>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <input
+                  type="email"
+                  class="formInput"
+                  id="email"
+                  name="Email"
+                  placeholder="Email"
+                  required
+                />
+                <i class="mail icon formIcon"></i>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <input
+                  type="password"
+                  class="formInput"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+                <i class="mobile alternate icon formIcon"></i>
+              </div>
+            </div>
+            <p class="error"></p>
+            <button id="m1FormBtn" class="fluid ui button formBtn">
+              S U B M I T
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"
+    ></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      
+      var firebaseConfig = {
+    apiKey: "AIzaSyAMOtqaLo5zulEcaUC1OfuxxxJoIwxCPyk",
+    authDomain: "expenses-c0397.firebaseapp.com",
+    databaseURL: "https://expenses-c0397.firebaseio.com",
+    projectId: "expenses-c0397",
+    storageBucket: "expenses-c0397.appspot.com",
+    messagingSenderId: "327664232762",
+    appId: "1:327664232762:web:a714b9442fe7796b804803"
+  };
+          
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="editExpense.css" />
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content flex">
+        <h1>EDIT EXPENSE</h1>
+        <form id="editExpenseForm" class="ui form">
+          <div class="field">
+            <input
+              id="description"
+              required
+              type="text"
+              name="email"
+              placeholder="Description"
+            />
+          </div>
+          <div class="field">
+            <input
+              id="cost"
+              required
+              type="number"
+              name="password"
+              placeholder="Cost"
+            />
+          </div>
+          <div class="field">
+            <input
+              id="spentAt"
+              required
+              type="date"
+              name="password"
+              placeholder="Spent At"
+            />
+          </div>
+          <button class="ui button teal fluid" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+    apiKey: "AIzaSyAMOtqaLo5zulEcaUC1OfuxxxJoIwxCPyk",
+    authDomain: "expenses-c0397.firebaseapp.com",
+    databaseURL: "https://expenses-c0397.firebaseio.com",
+    projectId: "expenses-c0397",
+    storageBucket: "expenses-c0397.appspot.com",
+    messagingSenderId: "327664232762",
+    appId: "1:327664232762:web:a714b9442fe7796b804803"
+  };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="editexpences.js"></script>
+  </body>
+</html>
